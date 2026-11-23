@@ -1,0 +1,13 @@
+{
+  "name": "WORA Tech",
+  "short_name": "WORA Tech",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#031447",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" }
+  ]
+}
