@@ -1,6 +1,13 @@
 /* WORA Tech : formulaire de devis, bandeau de consentement et mesure d'audience */
 (function () {
   'use strict';
+  // anti-clickjacking : GitHub Pages ne permet pas l'en-tête frame-ancestors,
+  // donc on refuse d'être affiché dans le cadre d'un autre site.
+  if (window.top !== window.self) {
+    try { window.top.location.replace(window.self.location.href); }
+    catch (e) { document.documentElement.style.display = 'none'; }
+    return;
+  }
   var WA = '242066629208';
   var MAIL = 'welcomolsen@gmail.com';
   var GC_URL = 'https://wora-tech.goatcounter.com/count';
